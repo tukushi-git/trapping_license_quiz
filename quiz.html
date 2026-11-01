@@ -188,6 +188,9 @@
 
       updateAccuracyBadge();
 
+      // 問題文表示
+      document.getElementById('question-text').innerText = q.question;
+
       // 画像の表示・非表示制御
       const imgContainer = document.getElementById('question-image-container');
       const imgElement = document.getElementById('question-image');
@@ -199,9 +202,6 @@
         imgContainer.classList.add('hidden');
         imgElement.src = "";
       }
-
-      // 問題文表示
-      document.getElementById('question-text').innerText = q.question;
 
       // 選択肢表示
       const container = document.getElementById('options-container');
