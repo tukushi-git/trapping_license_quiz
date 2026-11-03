@@ -1,0 +1,20 @@
+[
+  {
+    "question": "1 + 1 = ?",
+    "options": [2, 3, 4, 1],
+    "answer": 2,
+    "explanation": "1 に 1 をあわせると 2 になるよ！"
+  },
+  {
+    "question": "2 + 3 = ?",
+    "options": [4, 5, 6, 7],
+    "answer": 5,
+    "explanation": "2 に 3 をあわせると 5 になるよ！"
+  },
+  {
+    "question": "4 + 5 = ?",
+    "options": [8, 9, 10, 7],
+    "answer": 9,
+    "explanation": "4 に 5 をあわせると 9 になるよ！"
+  }
+]
