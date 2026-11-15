@@ -23,7 +23,7 @@
           <i class="fa-solid fa-house"></i> メニューへ戻る
         </a>
         <div class="bg-indigo-50 border border-indigo-200 text-indigo-700 font-extrabold px-3 py-1 rounded-full text-xs flex items-center gap-1.5">
-          <span>🎯 せいかいりつ:</span>
+          <span>正解率:</span>
           <span id="accuracy-badge">-- %</span>
         </div>
       </div>
@@ -31,7 +31,7 @@
       <!-- 進捗メーター -->
       <div class="mb-6">
         <div class="flex justify-between text-xs font-bold text-slate-400 mb-1">
-          <span id="progress-text">もんだい 1 / --</span>
+          <span id="progress-text">問題 1 / --</span>
           <span id="mode-title-badge" class="font-extrabold text-indigo-600">クイズ</span>
         </div>
         <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
@@ -42,7 +42,7 @@
       <!-- 問題カード -->
       <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 text-center mb-6 shadow-inner">
          <!-- 問題文 -->
-        <div id="question-text" class="text-3xl md:text-4xl font-extrabold text-slate-800 tracking-wider">読み込み中...</div>
+        <div id="question-text" class="text-2xl md:text-3xl font-extrabold text-slate-800 tracking-wider">読み込み中...</div>
         <!-- 問題用画像エリア -->
         <div id="question-image-container" class="hidden mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
           <img id="question-image" src="" alt="問題画像" class="w-full max-h-48 object-contain mx-auto p-2">
@@ -68,15 +68,15 @@
     <div id="result-screen" class="hidden bg-white rounded-3xl shadow-xl p-6 md:p-8 text-center">
       <div class="text-5xl mb-3">🎉</div>
       <h2 class="text-2xl font-black text-slate-800 mb-1">おつかれさまでした！</h2>
-      <p class="text-xs text-slate-400 mb-6">クイズがすべておわったよ</p>
+      <p class="text-xs text-slate-400 mb-6">クイズがすべて終わりました</p>
 
       <div class="bg-slate-50 rounded-2xl p-4 mb-6 border border-slate-100 grid grid-cols-2 gap-4">
         <div class="bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
-          <div class="text-xs text-slate-400 font-bold">せいかいすう</div>
+          <div class="text-xs text-slate-400 font-bold">正解数</div>
           <div class="text-2xl font-black text-indigo-600 mt-1"><span id="final-score">0</span> / <span id="final-total">0</span></div>
         </div>
         <div class="bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
-          <div class="text-xs text-slate-400 font-bold">せいかいりつ</div>
+          <div class="text-xs text-slate-400 font-bold">正解率</div>
           <div class="text-2xl font-black text-emerald-600 mt-1" id="final-accuracy">0%</div>
         </div>
       </div>
@@ -97,7 +97,8 @@
       questions_1_relevant_Laws_and_Regulations: "関係法令",
       questions_2_knowledge_of_Hunting_Implements: "猟具に関する知識",
       questions_3_knowledge_of_Wildlife: "鳥獣に関する知識",
-      questions_4_wildlife_Protection_and_Management: "保護及び管理"
+      questions_4_wildlife_Protection_and_Management: "保護及び管理",
+      questions_5_Wildlife_Identification:"鳥獣の判別"
     };
 
     let questions = [];
