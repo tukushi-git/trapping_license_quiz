@@ -60,7 +60,7 @@
 
       <!-- 次へボタン -->
       <button id="next-btn" onclick="nextQuestion()" class="hidden w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg transition-all text-center">
-        つぎのもんだいへ <i class="fa-solid fa-arrow-right ml-1"></i>
+        つぎの問題へ <i class="fa-solid fa-arrow-right ml-1"></i>
       </button>
     </div>
 
@@ -183,7 +183,7 @@
       answered = false;
       const q = questions[currentIndex];
 
-      document.getElementById('progress-text').innerText = `もんだい ${currentIndex + 1} / ${questions.length}`;
+      document.getElementById('progress-text').innerText = `問題 ${currentIndex + 1} / ${questions.length}`;
       const progressPercent = (currentIndex / questions.length) * 100;
       document.getElementById('progress-bar').style.width = `${progressPercent}%`;
 
